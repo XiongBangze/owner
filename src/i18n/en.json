@@ -1,0 +1,27 @@
+{
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "language": "中文"
+  },
+  "section": {
+    "experience": "Experience",
+    "projects": "Projects",
+    "skills": "Skills",
+    "education": "Education",
+    "blog": "Blog",
+    "contact": "Contact"
+  },
+  "blog": {
+    "readMore": "Read More",
+    "back": "Back",
+    "empty": "No posts yet"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  },
+  "footer": {
+    "builtWith": "Built with Astro"
+  }
+}

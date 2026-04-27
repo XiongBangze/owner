@@ -1,0 +1,127 @@
+{
+  "name": "Bangze Xiong",
+  "title": "Java Backend Developer",
+  "avatar": "/avatar.jpg",
+  "bio": "11 years of Java development experience, focused on high-performance, high-concurrency system architecture design and implementation. Currently at Transsion Holdings, leading the architecture and development of core systems including cloud control platform, weather services, and FM audio platform.",
+  "contact": {
+    "email": "13027100407@163.com",
+    "github": "https://github.com/XiongBangze",
+    "phone": "13027100407",
+    "linkedin": "",
+    "website": ""
+  },
+  "highlights": [
+    "11 years of Java experience, led cloud control platform architecture with 5000 QPS",
+    "Large-scale distributed system architecture: microservices, high availability, dynamic degradation",
+    "Full-stack practice: end-to-end development from driver layer to application layer",
+    "Africa market localization expert with deep understanding of African mobile internet ecosystem",
+    "Cloud sync service for tens of millions of users with 99.99% availability"
+  ],
+  "experience": [
+    {
+      "company": "Transsion Holdings",
+      "position": "Java Developer",
+      "location": "Shanghai",
+      "period": "2019.09 - Present",
+      "description": [
+        "Led TPMS cloud control platform development, achieving 5000 QPS with stable high-concurrency performance",
+        "Designed weather service architecture integrating multiple data providers, smart degradation ensuring 99.9% availability, handling 500K daily requests",
+        "Built FM audio platform on Spring Cloud Alibaba, reducing audio loading latency by 63%",
+        "Developed remote device locking system (PayTiger) integrated with payment risk control, improving bad debt recovery by 40%",
+        "Developed legal compliance module for user agreement and privacy policy version management, GDPR compliant",
+        "Built cloud sync service for photos and contacts, achieving 99%+ multi-device data consistency",
+        "Developed Africa local life service platform with mobile top-up supporting multiple carriers",
+        "Maintained InBook laptop driver management system through full lifecycle",
+        "Designed and implemented security lock module for ROM system"
+      ]
+    },
+    {
+      "company": "Shanghai Jinjiang International E-Commerce",
+      "position": "Java Software Engineer",
+      "location": "Shanghai",
+      "period": "2017.12 - 2019.09",
+      "description": [
+        "Developed CMS for 'Tour Shanghai' App (domestic & international), MQ sync to Elasticsearch for full-text search",
+        "Built REX distribution system for travel agencies covering tickets, hotel packages, and visas",
+        "Implemented multi-dimensional search with Elasticsearch, rate limiting with Redis+Lua and Guava Cache",
+        "Spring Cloud microservices with Feign, Eureka service discovery, and Apollo config center"
+      ]
+    },
+    {
+      "company": "Jiedaibao (P2P Lending)",
+      "position": "Java Engineer",
+      "location": "Beijing",
+      "period": "2016.10 - 2017.12",
+      "description": [
+        "Built payment operations platform from scratch using Spring MVC + MyBatis + Dubbo + Zookeeper",
+        "Developed core modules: user management, transfers, and litigation review for P2P operations",
+        "Led automation operations project for server asset management and automated deployment"
+      ]
+    },
+    {
+      "company": "Pactera Technology (formerly VanceInfo)",
+      "position": "Software Engineer",
+      "location": "Beijing",
+      "period": "2013.10 - 2016.10",
+      "description": [
+        "Developed China SAFE (State Administration of Foreign Exchange) e-government system",
+        "Built CSDC permission management system covering SSO, role-based access control",
+        "Participated in Huijinsuo P2P platform and Youqian Renxin lending app development"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TPMS Cloud Control Platform",
+      "tech": ["Java", "Spring Boot", "Microservices", "Redis", "Load Balancing"],
+      "description": "Cloud control platform for Transsion phones. Microservices architecture with load balancing and caching, achieving 5000+ QPS for full fleet device management."
+    },
+    {
+      "name": "Weather Service Platform",
+      "tech": ["Java", "Distributed Computing", "Multi-source", "Degradation Strategy"],
+      "description": "Integrated multiple weather data provider APIs with smart degradation mechanism. 99.9% availability, 500K daily requests, response time under 200ms."
+    },
+    {
+      "name": "FM Audio Platform (OSFM)",
+      "tech": ["Spring Cloud Alibaba", "Nacos", "Redis", "HLS", "Audio Crawler"],
+      "description": "Independently designed microservices architecture. Innovative dual-version system (religious/non-religious). Custom HLS adaptive bitrate algorithm saving 45% bandwidth, reducing latency by 63%."
+    },
+    {
+      "name": "PayTiger Remote Lock System",
+      "tech": ["Java", "Spring Boot", "IMEI", "Risk Control"],
+      "description": "IMEI-based remote device locking service integrated with payment risk control. Real-time device locking on anomalous transactions, improving bad debt recovery by 40%."
+    },
+    {
+      "name": "Cloud Sync Service",
+      "tech": ["Java", "Distributed Systems", "Data Consistency"],
+      "description": "Cloud sync for tens of millions of users (photos/contacts). Multi-device data consistency algorithm achieving 99%+ accuracy."
+    },
+    {
+      "name": "Tour Shanghai App",
+      "tech": ["Spring Cloud", "Elasticsearch", "RabbitMQ", "Redis"],
+      "description": "Tour Shanghai App (domestic & international editions) covering news, tickets, tourism, hotels. Elasticsearch-powered multi-dimensional search with weighted ranking."
+    }
+  ],
+  "skills": {
+    "Languages": ["Java", "SQL", "Python", "Go", "Scala"],
+    "Frameworks": ["Spring Boot", "Spring Cloud", "Spring Cloud Alibaba", "MyBatis", "Hibernate", "Dubbo"],
+    "Middleware": ["Redis", "Kafka", "RabbitMQ", "Elasticsearch", "Zookeeper", "Nacos"],
+    "Databases": ["MySQL", "Oracle", "MongoDB"],
+    "DevOps": ["Docker", "Linux", "Jenkins", "CI/CD", "Maven", "Git"],
+    "Architecture": ["Microservices", "Distributed Systems", "High Concurrency", "Load Balancing", "Degradation Strategy", "HLS Streaming"]
+  },
+  "education": [
+    {
+      "school": "Changsha University of Science & Technology",
+      "major": "Electrical Engineering and Automation",
+      "degree": "Bachelor",
+      "period": "2010.09 - 2014.07"
+    },
+    {
+      "school": "Hunan Mechanical & Electrical Polytechnic",
+      "major": "Mechatronics Engineering",
+      "degree": "Associate",
+      "period": "2010.09 - 2013.07"
+    }
+  ]
+}

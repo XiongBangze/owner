@@ -1,0 +1,29 @@
+---
+interface Props {
+  name: string;
+  title: string;
+  bio: string;
+  highlights?: string[];
+  contact: { email: string; github: string; phone?: string; linkedin: string; website: string };
+}
+const { name, title, bio, highlights, contact } = Astro.props;
+---
+<section class="py-16 text-center">
+  <div class="mb-4 inline-block rounded-full border-2 border-primary p-1">
+    <img src="/avatar.jpg" alt={name} class="h-28 w-28 rounded-full object-cover" onerror="this.style.display='none'" />
+  </div>
+  <h1 class="text-4xl font-bold">{name}</h1>
+  <p class="mt-2 text-xl text-primary">{title}</p>
+  <p class="mx-auto mt-4 max-w-2xl text-text-muted">{bio}</p>
+  {highlights && highlights.length > 0 && (
+    <ul class="mx-auto mt-6 max-w-2xl space-y-1 text-left text-sm text-text-muted">
+      {highlights.map(h => <li class="before:mr-2 before:text-primary before:content-['▹']">{h}</li>)}
+    </ul>
+  )}
+  <div class="mt-6 flex flex-wrap justify-center gap-3">
+    {contact.email && <a href={`mailto:${contact.email}`} class="rounded-lg border border-border px-4 py-2 text-sm text-text-muted hover:border-primary hover:text-primary transition-colors">📧 Email</a>}
+    {contact.phone && <a href={`tel:${contact.phone}`} class="rounded-lg border border-border px-4 py-2 text-sm text-text-muted hover:border-primary hover:text-primary transition-colors">📱 {contact.phone}</a>}
+    {contact.github && <a href={contact.github} target="_blank" class="rounded-lg border border-border px-4 py-2 text-sm text-text-muted hover:border-primary hover:text-primary transition-colors">GitHub</a>}
+    {contact.linkedin && <a href={contact.linkedin} target="_blank" class="rounded-lg border border-border px-4 py-2 text-sm text-text-muted hover:border-primary hover:text-primary transition-colors">LinkedIn</a>}
+  </div>
+</section>

@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  items: { school: string; major: string; degree: string; period: string }[];
+}
+const { title, items } = Astro.props;
+---
+<section class="py-12">
+  <h2 class="mb-8 text-2xl font-bold text-primary">{title}</h2>
+  <div class="space-y-4">
+    {items.map(item => (
+      <div class="rounded-xl border border-border bg-surface-light p-6 flex flex-wrap items-baseline justify-between gap-2">
+        <div>
+          <h3 class="text-lg font-semibold">{item.school}</h3>
+          <p class="text-sm text-text-muted">{item.major} · {item.degree}</p>
+        </div>
+        <span class="text-sm text-text-muted">{item.period}</span>
+      </div>
+    ))}
+  </div>
+</section>

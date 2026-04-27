@@ -1,0 +1,29 @@
+---
+import Base from '../../../layouts/Base.astro';
+import { t } from '../../../i18n';
+import { getCollection, render } from 'astro:content';
+
+const lang = 'en' as const;
+const i = t(lang);
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog', ({ id }) => id.startsWith('en/'));
+  return posts.map(post => ({
+    params: { slug: post.id.replace('en/', '') },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
+<Base lang={lang} title={post.data.title}>
+  <article class="py-12">
+    <a href={`/${lang}/blog/`} class="text-sm text-text-muted hover:text-primary">← {i.blog.back}</a>
+    <h1 class="mt-4 text-3xl font-bold">{post.data.title}</h1>
+    <p class="mt-2 text-sm text-text-muted">{post.data.date} · {post.data.tags?.join(', ')}</p>
+    <div class="prose prose-dark mt-8 max-w-none">
+      <Content />
+    </div>
+  </article>
+</Base>

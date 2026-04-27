@@ -1,0 +1,123 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --color-primary: #06b6d4;
+  --color-primary-light: #22d3ee;
+  --color-accent: #8b5cf6;
+  --color-surface: #0f172a;
+  --color-surface-light: #1e293b;
+  --color-surface-lighter: #334155;
+  --color-text: #e2e8f0;
+  --color-text-muted: #94a3b8;
+  --color-border: #334155;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-surface);
+  color: var(--color-text);
+}
+
+/* Light mode overrides */
+html.light body {
+  background-color: #f8fafc;
+  color: #1e293b;
+}
+
+html.light {
+  --color-surface: #f8fafc;
+  --color-surface-light: #ffffff;
+  --color-surface-lighter: #e2e8f0;
+  --color-text: #1e293b;
+  --color-text-muted: #64748b;
+  --color-border: #cbd5e1;
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Prose dark theme overrides */
+.prose-dark {
+  --tw-prose-body: #cbd5e1;
+  --tw-prose-headings: #e2e8f0;
+  --tw-prose-lead: #94a3b8;
+  --tw-prose-links: #22d3ee;
+  --tw-prose-bold: #e2e8f0;
+  --tw-prose-counters: #94a3b8;
+  --tw-prose-bullets: #06b6d4;
+  --tw-prose-hr: #334155;
+  --tw-prose-quotes: #e2e8f0;
+  --tw-prose-quote-borders: #06b6d4;
+  --tw-prose-captions: #94a3b8;
+  --tw-prose-code: #22d3ee;
+  --tw-prose-pre-code: #e2e8f0;
+  --tw-prose-pre-bg: #0f172a;
+  --tw-prose-th-borders: #475569;
+  --tw-prose-td-borders: #334155;
+}
+
+.prose-dark :where(code):not(:where(pre *)) {
+  background-color: #1e293b;
+  padding: 0.2em 0.4em;
+  border-radius: 0.25rem;
+  font-size: 0.875em;
+}
+
+.prose-dark :where(pre) {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+}
+
+.prose-dark :where(thead) {
+  border-bottom-color: #475569;
+}
+
+.prose-dark :where(tbody tr) {
+  border-bottom-color: #1e293b;
+}
+
+.prose-dark :where(a) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose-dark :where(a:hover) {
+  color: #06b6d4;
+}
+
+/* Light mode prose - use defaults */
+html.light .prose-dark {
+  --tw-prose-body: #334155;
+  --tw-prose-headings: #1e293b;
+  --tw-prose-lead: #64748b;
+  --tw-prose-links: #0891b2;
+  --tw-prose-bold: #1e293b;
+  --tw-prose-counters: #64748b;
+  --tw-prose-bullets: #0891b2;
+  --tw-prose-hr: #e2e8f0;
+  --tw-prose-quotes: #1e293b;
+  --tw-prose-quote-borders: #0891b2;
+  --tw-prose-captions: #64748b;
+  --tw-prose-code: #0891b2;
+  --tw-prose-pre-code: #e2e8f0;
+  --tw-prose-pre-bg: #1e293b;
+  --tw-prose-th-borders: #cbd5e1;
+  --tw-prose-td-borders: #e2e8f0;
+}
+
+html.light .prose-dark :where(code):not(:where(pre *)) {
+  background-color: #f1f5f9;
+  color: #0891b2;
+}
+
+html.light .prose-dark :where(pre) {
+  background-color: #1e293b;
+  border-color: #334155;
+}

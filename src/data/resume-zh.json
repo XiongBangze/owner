@@ -1,0 +1,127 @@
+{
+  "name": "熊邦泽",
+  "title": "Java 服务端开发工程师",
+  "avatar": "/avatar.jpg",
+  "bio": "11年Java开发经验，专注于高性能、高并发系统架构设计与实现，具备丰富的企业级应用开发经验。目前任职于传音控股，主导云控平台、天气服务、FM音频平台等核心系统的架构设计与开发。",
+  "contact": {
+    "email": "13027100407@163.com",
+    "github": "https://github.com/XiongBangze",
+    "phone": "13027100407",
+    "linkedin": "",
+    "website": ""
+  },
+  "highlights": [
+    "11年Java开发经验，主导QPS达5000的云控平台架构设计",
+    "大型分布式系统架构能力，微服务、高可用、动态降级策略",
+    "全栈技术实践：从驱动层到应用层的全链路开发经验",
+    "非洲市场本地化专家，深度理解非洲移动互联网生态",
+    "千万级用户云同步服务，99.99%可用性保障"
+  ],
+  "experience": [
+    {
+      "company": "传音控股",
+      "position": "Java开发工程师",
+      "location": "上海-浦东新区",
+      "period": "2019.09 - 至今",
+      "description": [
+        "主导TPMS云控平台核心功能开发，系统QPS达5000，保障高并发场景下稳定运行",
+        "主导天气项目技术方案设计，整合多家供应商数据，智能降级策略保障99.9%服务可用性，日均处理50万次请求",
+        "构建FM音频平台系统架构，采用Spring Cloud Alibaba技术栈，音频加载延迟降低63%",
+        "开发远程锁机系统（PayTiger），集成支付风控体系，坏账回收率提升40%",
+        "负责法律在线模块开发，实现用户协议和隐私政策版本管理，严格遵循GDPR合规要求",
+        "参与云端服务研发，负责相册和联系人同步功能，多终端数据一致性达99%以上",
+        "开发非洲本地生活服务平台，实现手机话费充值等功能，支持多运营商和套餐",
+        "负责InBook笔记本驱动程序管理系统的全生命周期开发维护",
+        "参与ROM系统开发，负责安全锁功能模块的设计与实现"
+      ]
+    },
+    {
+      "company": "上海锦江国际电子商务有限公司",
+      "position": "Java软件工程师",
+      "location": "上海",
+      "period": "2017.12 - 2019.09",
+      "description": [
+        "负责游上海App国内版/国际版内容管理系统开发，通过MQ同步至ES实现全文检索",
+        "开发REX分销系统，为旅行社提供分销供应产品功能，包括门票、酒店套餐、签证等",
+        "基于Elasticsearch实现多维度检索和权重排序，使用Redis+Lua限流和Guava Cache限流",
+        "项目采用Spring Cloud微服务架构，Feign远程调用，Eureka服务注册发现，Apollo配置中心"
+      ]
+    },
+    {
+      "company": "借贷宝",
+      "position": "Java工程师",
+      "location": "北京",
+      "period": "2016.10 - 2017.12",
+      "description": [
+        "负责借贷宝支付运营管理平台系统搭建，采用Spring MVC + MyBatis + Dubbo + Zookeeper架构",
+        "开发P2P运营平台用户管理、转账、诉讼审核等核心模块",
+        "负责自动化运维项目，实现支付中心服务器资产统筹管理和自动化部署"
+      ]
+    },
+    {
+      "company": "北京文思海辉技术有限公司",
+      "position": "软件工程师",
+      "location": "北京",
+      "period": "2013.10 - 2016.10",
+      "description": [
+        "参与中国国家外汇局电子政务系统开发，负责境内业务、权限管理等模块",
+        "开发中证权限管理系统，覆盖机构管理、用户管理、角色管理、单点登录等功能",
+        "参与惠金所P2P项目及友钱任信借贷App开发"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "TPMS 云控平台",
+      "tech": ["Java", "Spring Boot", "微服务", "Redis", "负载均衡"],
+      "description": "传音手机云端控制平台，基于微服务架构设计，通过负载均衡和缓存机制使系统QPS提升至5000+，支撑全量传音手机云端管控功能。"
+    },
+    {
+      "name": "天气服务平台",
+      "tech": ["Java", "分布式计算", "多数据源", "降级策略"],
+      "description": "整合多个气象数据供应商API，开发智能数据降级机制，保证99.9%服务可用性，日均处理50万次请求，响应时间控制在200ms以内。"
+    },
+    {
+      "name": "FM 音频平台 (OSFM)",
+      "tech": ["Spring Cloud Alibaba", "Nacos", "Redis", "HLS", "音频爬虫"],
+      "description": "独立完成微服务架构设计，创新性设计宗教/非宗教双版本并行体系，自主研发HLS自适应码率算法，节省45%流量消耗，音频加载延迟降低63%。"
+    },
+    {
+      "name": "PayTiger 远程锁机系统",
+      "tech": ["Java", "Spring Boot", "IMEI", "风控"],
+      "description": "基于设备IMEI的远程锁机服务，集成支付风控体系，实时触发设备锁定机制，坏账回收率提升40%。"
+    },
+    {
+      "name": "云同步服务",
+      "tech": ["Java", "分布式", "数据一致性"],
+      "description": "千万级用户的云同步服务（相册/联系人），设计多终端数据一致性算法，数据准确率达99%以上。"
+    },
+    {
+      "name": "游上海 App",
+      "tech": ["Spring Cloud", "Elasticsearch", "RabbitMQ", "Redis"],
+      "description": "游上海App国内版/国际版，包含资讯、门票、旅游、酒店等功能，基于ES全文检索引擎实现多维度检索和权重排序。"
+    }
+  ],
+  "skills": {
+    "语言": ["Java", "SQL", "Python", "Go", "Scala"],
+    "框架": ["Spring Boot", "Spring Cloud", "Spring Cloud Alibaba", "MyBatis", "Hibernate", "Dubbo"],
+    "中间件": ["Redis", "Kafka", "RabbitMQ", "Elasticsearch", "Zookeeper", "Nacos"],
+    "数据库": ["MySQL", "Oracle", "MongoDB"],
+    "DevOps": ["Docker", "Linux", "Jenkins", "CI/CD", "Maven", "Git"],
+    "架构": ["微服务", "分布式系统", "高并发", "负载均衡", "降级策略", "HLS流媒体"]
+  },
+  "education": [
+    {
+      "school": "长沙理工大学",
+      "major": "电气工程及其自动化",
+      "degree": "本科",
+      "period": "2010.09 - 2014.07"
+    },
+    {
+      "school": "湖南机电职业技术学院",
+      "major": "机械电子工程/机电一体化",
+      "degree": "大专",
+      "period": "2010.09 - 2013.07"
+    }
+  ]
+}

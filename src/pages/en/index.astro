@@ -1,0 +1,20 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import Experience from '../../components/Experience.astro';
+import Projects from '../../components/Projects.astro';
+import Skills from '../../components/Skills.astro';
+import Education from '../../components/Education.astro';
+import { t } from '../../i18n';
+import resume from '../../data/resume-en.json';
+
+const lang = 'en' as const;
+const i = t(lang);
+---
+<Base lang={lang} title={`${resume.name} | ${resume.title}`} description={resume.bio}>
+  <Hero {...resume} />
+  <Experience title={i.section.experience} items={resume.experience} />
+  <Projects title={i.section.projects} items={resume.projects} />
+  <Skills title={i.section.skills} skills={resume.skills} />
+  <Education title={i.section.education} items={resume.education} />
+</Base>

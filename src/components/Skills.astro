@@ -1,0 +1,20 @@
+---
+interface Props {
+  title: string;
+  skills: Record<string, string[]>;
+}
+const { title, skills } = Astro.props;
+---
+<section class="py-12">
+  <h2 class="mb-8 text-2xl font-bold text-primary">{title}</h2>
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {Object.entries(skills).map(([category, items]) => (
+      <div class="rounded-xl border border-border bg-surface-light p-5">
+        <h3 class="mb-3 text-sm font-semibold text-primary">{category}</h3>
+        <div class="flex flex-wrap gap-2">
+          {items.map(s => <span class="rounded-md bg-surface-lighter px-2 py-1 text-xs text-text-muted">{s}</span>)}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
