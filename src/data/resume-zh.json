@@ -72,6 +72,11 @@
   ],
   "projects": [
     {
+      "name": "飞书 AI Agent 智能助手",
+      "tech": ["Python", "LLM", "LangChain", "Function Calling", "飞书 API"],
+      "description": "基于大语言模型的飞书智能助手，通过 LLM 对用户自然语言指令进行意图识别和任务分拆，自动编排执行飞书定时任务创建、数据库查询、消息通知等操作，实现从自然语言到业务动作的端到端自动化。"
+    },
+    {
       "name": "TPMS 云控平台",
       "tech": ["Java", "Spring Boot", "微服务", "Redis", "负载均衡"],
       "description": "传音手机云端控制平台，基于微服务架构设计，通过负载均衡和缓存机制使系统QPS提升至5000+，支撑全量传音手机云端管控功能。"

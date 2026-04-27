@@ -72,6 +72,11 @@
   ],
   "projects": [
     {
+      "name": "Feishu AI Agent Assistant",
+      "tech": ["Python", "LLM", "LangChain", "Function Calling", "Feishu API"],
+      "description": "An intelligent Feishu (Lark) assistant powered by LLM. Parses natural language instructions into structured plans, automatically orchestrating scheduled task creation, database queries, and message notifications — enabling end-to-end automation from natural language to business actions."
+    },
+    {
       "name": "TPMS Cloud Control Platform",
       "tech": ["Java", "Spring Boot", "Microservices", "Redis", "Load Balancing"],
       "description": "Cloud control platform for Transsion phones. Microservices architecture with load balancing and caching, achieving 5000+ QPS for full fleet device management."
